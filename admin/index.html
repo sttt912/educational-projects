@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<head>
+  <meta charset="utf-8">
+  <!-- style  -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.css">
+
+  <!-- end style  -->
+
+ <!-- Load Vue script -->
+  <script src="https://vuejs.org/js/vue.js"></script>
+  <!-- On load, init Vue -->
+</head>
+
+<header class="sticky">
+<a href="index.html" class="logo">Логотип</a>
+<a href="admin.html" class="button">Админка</a>
+</header>
+
+  <div id="app">
+    Ваше имя <input v-model="name"><br>
+    Пароль <input v-model="pass"><br>
+    <button @click="persist">Вход</button>
+
+
+  </div>
+
+
+  <footer>
+  <p>Разработка для тестов</p>
+  </footer>
+
+<script src="js/core.js"></script>
+
+</body>
+</html>

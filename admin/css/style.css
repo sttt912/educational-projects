@@ -1,0 +1,15 @@
+
+#app1 {
+  text-align: center;
+  padding: 40px;
+  font-size: 36px;
+  color: #8B0000;
+}
+
+#app {
+  text-align: center;
+  padding: 10px; /*отступ*/
+  font-size: 22px;
+  margin: 0 auto;
+  display: table;
+}

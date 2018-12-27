@@ -1,0 +1,40 @@
+<html>
+<body>
+
+  <head>
+    <meta charset="utf-8">
+    <!-- style  -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.css">
+    <!-- end style  -->
+
+   <!-- Load Vue script -->
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <!-- On load, init Vue -->
+  </head>
+
+  <header class="sticky">
+  <a href="index.html" class="logo">Логотип</a>
+  <a href="admin.html" class="button">Админка</a>
+  </header>
+
+  <div id="app">
+ <p>{{enabled}}</p>
+
+<p v-if="checked == 'true'">
+<input type="text" v-model="newusers" /><br/>
+<button v-on:click="users.push(newusers)">Добавить</button><br/>
+<b v-for="(user,index) in users">{{index + 1}}.{{user}}<button v-on:click="users.splice(index, 1)">Удалить</button><br/></b> <br/>
+<button v-on:click="saveusers">Сохранить</button><br/>
+</p>
+
+
+  </div>
+
+<footer>
+<p>Разработка для тестов</p>
+</footer>
+<script src="js/core.js"></script>
+
+</body>
+</html>
