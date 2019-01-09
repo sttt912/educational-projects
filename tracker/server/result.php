@@ -11,7 +11,7 @@ $obj=json_decode($json_string);
 echo '<b>Ваша валютная пара:</b> '.$valut1.'<br/>';
 
 foreach($obj->data as $val){
-  echo '<b>Текущая цена</b> '.$val.'<br/>';
+  echo '<b>Текущая цена:</b> '.$val.'<br/>';
 }
   
 require_once('inc/foot.php');

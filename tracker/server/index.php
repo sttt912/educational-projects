@@ -10,7 +10,7 @@ $obj=json_decode($json_string);
 
 
  echo '<form action="result.php" method="post">';
- echo '<select name="valut"><option disabled value="">Выберите один из вариантов</option>';
+ echo '<select name="valut"><option disabled value="">Выберите один из вариантов:</option>';
 	foreach($obj->data as $val){
 		echo '<option>'.$val.'</option>';
     
