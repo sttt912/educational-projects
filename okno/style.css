@@ -42,7 +42,7 @@
 	top: -55px;
 	width: 24px;
 	height: 24px;
-	background: url(close.png) no-repeat center center;
+	background: url(img/close.png) no-repeat center center;
 	-webkit-animation: initiate 350ms ease;
 	-moz-animation: initiate 350ms ease;
 	-o-animation: initiate 350ms ease;
@@ -55,7 +55,7 @@
 	border-radius: 0px 0px 3px 3px;
 	right: 10px;
 	top: -55px;
-	background: url(show.png) no-repeat center center #79B928;
+	background: url(img/show.png) no-repeat center center #79B928;
 }
 
 .notification-bar:hover {
